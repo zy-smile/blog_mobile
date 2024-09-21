@@ -1,0 +1,76 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pagesA",
+			"pages": [
+				{
+					"path": "pages/article/addArticle",
+					"style": {
+						"navigationBarTitleText": "创建文章"
+					}
+				},
+				{
+					"path": "pages/article/articleDetail",
+					"style": {
+						"navigationBarTitleText": "文章详情"
+					}
+				},
+				{
+					"path": "pages/mine/articleList",
+					"style": {
+						"navigationBarTitleText": "我的发布"
+					}
+				},
+				{
+					"path": "pages/dataChart/dataChart",
+					"style": {
+						"navigationBarTitleText": "数据分析"
+					}
+				}
+			]
+		}
+	],
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#3c9cff",
+		"list": [
+			{
+				"iconPath": "static/tabbar/index.png",
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"selectedIconPath": "static/tabbar/index-select.png"
+			},
+			{
+				"iconPath": "static/tabbar/user.png",
+				"pagePath": "pages/user/user",
+				"text": "我的",
+
+				"selectedIconPath": "static/tabbar/user-select.png"
+			}
+		]
+	}
+}
