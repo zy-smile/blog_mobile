@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        "pages/article/addArticle",
+        "pages/article/articleDetail",
+        "pages/mine/articleList",
+        "pages/dataChart/dataChart"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#3c9cff",
+    "list": [
+      {
+        "iconPath": "static/tabbar/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "static/tabbar/index-select.png"
+      },
+      {
+        "iconPath": "static/tabbar/user.png",
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "selectedIconPath": "static/tabbar/user-select.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
